@@ -146,6 +146,8 @@
 
 .last-next-match {
   display: flex;
+  justify-content: center;
+  position: absolute;
 }
 
 .last-match-block {
@@ -154,7 +156,43 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border: 1px white solid;
+  position: relative;
+  left: 480px;
+  top: -100px;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -9999px;
+    width: 9999px;
+    background: #21367D;
+    z-index: 5;
+  }
+  z-index: 2;
+}
+
+.next-match-block {
+  background: #72AEF7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 48px 183px 43px 240px;
+  position: relative;
+  left: 400px;
+  top: -50px;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -9999px;
+    width: 9999px;
+    background: #72AEF7;
+    z-index: 5;
+  }
+  z-index: 1;
 }
 
 .last-match-header {
@@ -163,6 +201,7 @@
   font-size: 30px;
   line-height: 100%;
   color: #FFFFFF;
+  margin-top: 34px;
 }
 
 .last-match-head-to-head {
@@ -170,15 +209,16 @@
   align-items: center;
   justify-content: center;
   gap: 60px;
-  border: 1px white solid;
   margin-bottom: 3px;
+  margin-right: 125px;
+  margin-left: 125px;
 }
 
 .last-match-team {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px white solid;
+  gap: 18px;
 }
 
 .last-match-team-text {
@@ -187,6 +227,7 @@
   font-size: 20px;
   line-height: 20px;
   color: #FFFFFF;
+  white-space: nowrap;
 }
 
 .last-match-score-text {
@@ -195,6 +236,8 @@
   font-size: 32px;
   line-height: 20px;
   color: #FFFFFF;
+  white-space: nowrap;
+  display: inline-block;
 }
 
 .last-match-championship-name {
@@ -215,15 +258,7 @@
   font-size: 14px;
   line-height: 20px;
   color: #FFFFFF;
-}
-
-.next-match-block {
-  background: #72AEF7;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  border: 1px white solid;
+  margin-bottom: 33px;
 }
 
 .next-match-championship {
@@ -236,6 +271,8 @@
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 22px;
+  white-space: nowrap;
+  display: inline-block;
 }
 
 .next-match-text {
@@ -250,7 +287,7 @@
 .next-match-timer {
   display: flex;
   gap: 10px;
-  border: 1px black solid;
+  /* border: 1px black solid; */
 }
 
 .next-match-number {
@@ -260,6 +297,8 @@
   line-height: 25px;
   text-transform: uppercase;
   color: #FFFFFF;
+  white-space: nowrap;
+  display: inline-block;
 }
 
 .next-match-time {

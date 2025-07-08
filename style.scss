@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -181,16 +185,17 @@
   padding: 48px 183px 43px 240px;
   position: relative;
   left: 400px;
-  top: -50px;
+  top: -60px;
   &::before {
     content: '';
     position: absolute;
     top: 0;
     bottom: 0;
-    right: -9999px;
-    width: 9999px;
+    left: 100%;
+    width: calc(100vw - 400px);
     background: #72AEF7;
     z-index: 5;
+    pointer-events: none;
   }
   z-index: 1;
 }

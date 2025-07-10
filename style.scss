@@ -151,6 +151,7 @@ body {
 .last-next-match {
   display: flex;
   justify-content: center;
+  padding-bottom: 94px;
 }
 
 .last-match-block {
@@ -285,4 +286,87 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.about-the-club-text-block {
+  margin-right: 70px;
+}
+
+.about-the-club {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(33, 54, 125, 0.10);
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  > .container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding-bottom: 100px;
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+
+.about-the-club-text {
+  font-family: Changa, serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #21367d;
+  padding: 10px 14px 25px;
+}
+
+.about-the-club-header {
+  font-family: Changa, serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 104%;
+  text-transform: uppercase;
+  color: #060606;
+  padding-bottom: 15px;
+}
+
+.about-the-club-header-chornomorets {
+  font-family: Changa, serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 104%;
+  text-transform: uppercase;
+  color: #21367d;
+}
+
+.about-the-club-description {
+  font-family: Barlow, serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 156%;
+  color: #000;
+  opacity: 0.7;
+  padding-bottom: 33px;
+}
+
+.about-the-club-button {
+  font-family: Changa, serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  padding: 5px 25px;
+  text-decoration: none;
+  background: #21367D;
 }

@@ -608,6 +608,7 @@ body {
 
 .join-now {
   background: linear-gradient(110deg, #e6e6e6 55%, #061B50 55%);
+  margin-bottom: 108px;
 }
 
 .join-now-text-block {
@@ -666,6 +667,40 @@ body {
 .join-now-right-side img {
   position: absolute;
   top: -170px;
+}
+
+.photos-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photos-text-block {
+  font-family: Changa, serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #21367D;
+  background: rgba(33, 54, 125, 0.15);
+  display: inline-block;
+  padding: 3px 20px;
+  margin-bottom: 30px;
+}
+
+.photos-header {
+  font-family: Changa, serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.photos-images {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

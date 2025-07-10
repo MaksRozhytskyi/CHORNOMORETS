@@ -465,6 +465,13 @@ body {
   border: 3px solid rgba(255, 255, 255, 0.3);
   text-align: center;
   margin-bottom: 5px;
+  white-space: nowrap;
+  padding: 2px 5px;
+  display: inline-block;
+}
+
+.schedule-time-block {
+  text-align: center;
 }
 
 .schedule-date {
@@ -497,4 +504,8 @@ body {
   gap: 30px;
   justify-content: center;
   align-items: center;
+}
+
+.owl-carousel {
+  margin-bottom: 133px;
 }

@@ -149,7 +149,6 @@ body {
 .last-next-match {
   display: flex;
   justify-content: center;
-  position: absolute;
 }
 
 .last-match-block {
@@ -158,20 +157,6 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  position: relative;
-  left: 480px;
-  top: -100px;
-  z-index: 2;
-}
-.last-match-block::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -9999px;
-  width: 9999px;
-  background: #21367D;
-  z-index: 5;
 }
 
 .next-match-block {
@@ -180,22 +165,6 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 48px 183px 43px 240px;
-  position: relative;
-  left: 400px;
-  top: -60px;
-  z-index: 1;
-}
-.next-match-block::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 100%;
-  width: calc(100vw - 400px);
-  background: #72AEF7;
-  z-index: 5;
-  pointer-events: none;
 }
 
 .last-match-header {
@@ -213,8 +182,6 @@ body {
   justify-content: center;
   gap: 60px;
   margin-bottom: 3px;
-  margin-right: 125px;
-  margin-left: 125px;
 }
 
 .last-match-team {

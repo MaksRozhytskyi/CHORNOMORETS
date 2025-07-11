@@ -8,3 +8,4 @@ Bugs and known issues:
 5) Wrong links in "Contact us"
 6) **LAST AND NEXT MATCHES**
 7) No mobile version
+8) Title

@@ -6,4 +6,4 @@ Bugs and known issues:
 3) No hovers in some buttons
 4) No links in news
 6) **LAST AND NEXT MATCHES**
-7) No mobile version
+7) Need to review different devices

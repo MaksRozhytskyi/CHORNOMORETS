@@ -267,9 +267,8 @@ body {
   .last-match-block {
     display: flex;
     justify-content: center;
-    position: relative;
+    position: static;
     align-items: center;
-    margin-top: 100px;
     padding: 0;
   }
 }
@@ -298,11 +297,10 @@ body {
 }
 @media (max-width: 576px) {
   .next-match-block {
-    position: absolute;
-    top: 270px;
+    position: static;
     display: flex;
     justify-content: center;
-    padding: 0 20px 0 5px;
+    padding: 0 20px 0 20px;
   }
 }
 

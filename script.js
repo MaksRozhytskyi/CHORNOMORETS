@@ -8,10 +8,10 @@ $(document).ready(function(){
 });
 
 (function() {
-    var burger = document.querySelector('.mobile-menu-container .burger-container'); // Target burger inside mobile menu
-    var mobileMenu = document.querySelector('.mobile-menu-container'); // Target the mobile menu container
+    var burger = document.querySelector('.mobile-menu-container .burger-container');
+    var mobileMenu = document.querySelector('.mobile-menu-container');
 
-    if (burger && mobileMenu) { // Check if elements exist
+    if (burger && mobileMenu) { 
         burger.onclick = function() {
             mobileMenu.classList.toggle('menu-opened');
         }

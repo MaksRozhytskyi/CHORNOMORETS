@@ -230,6 +230,7 @@ body {
   .last-next-match {
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
   }
 }
 @media (max-width: 576px) {

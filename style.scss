@@ -48,6 +48,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 60px;
   }
 }
 
@@ -70,7 +71,7 @@ body {
   list-style-type: none;
 
   @media (max-width: $breakpoint-sm) {
-    font-size: 36px;
+    font-size: 24px;
     display: flex;
     justify-content: center;
   }
@@ -159,7 +160,7 @@ body {
   padding-bottom: 20px;
   @media (max-width: $breakpoint-sm) {
     margin-left: 20px;
-    font-size: 80px;
+    font-size: 60px;
   }
 }
 
@@ -172,6 +173,8 @@ body {
   padding-bottom: 30px;
   @media (max-width: $breakpoint-sm) {
     margin-left: 20px;
+    padding-right: 30px;
+    font-size: 20px;
   }
 }
 
@@ -424,6 +427,7 @@ body {
   margin-top: 5px;
   @media (max-width: $breakpoint-sm) {
     margin-left: 20px;
+    margin-top: 30px;
   }
 }
 
@@ -437,6 +441,7 @@ body {
   padding-bottom: 15px;
   @media (max-width: $breakpoint-sm) {
     margin-left: 20px;
+    font-size: 34px;
   }
 }
 
@@ -447,6 +452,9 @@ body {
   line-height: 104%;
   text-transform: uppercase;
   color: #21367d;
+  @media (max-width: $breakpoint-sm) {
+    font-size: 34px;
+  }
 }
 
 .about-the-club-description {
@@ -682,6 +690,9 @@ body {
     > *:not(:first-child) {
       display: none;
     }
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -780,6 +791,7 @@ body {
   @media (max-width: $breakpoint-sm) {
     margin-left: 20px;
     line-height: 20px;
+    margin-right: 20px;
   }
 }
 
@@ -851,6 +863,8 @@ body {
   @media (max-width: $breakpoint-sm) {
     display: flex;
     flex-direction: column;
+    margin-right: 20px;
+    margin-left: 20px;
   }
 }
 
@@ -986,6 +1000,7 @@ body {
   }
 }
 
+
 .white-space {
   margin-bottom: 65px;
 }
@@ -1043,6 +1058,7 @@ body {
     gap: 5px;
     @media (max-width: $breakpoint-sm) {
       gap: 10px;
+      text-align: center;
     }
 
     li a {

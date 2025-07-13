@@ -153,6 +153,7 @@ body {
 @media (max-width: 576px) {
   .welcome-box {
     margin-left: 20px;
+    margin-top: 50px;
   }
 }
 
@@ -1171,6 +1172,192 @@ body {
   color: rgba(255, 255, 255, 0.5);
   text-align: center;
   padding-bottom: 7px;
+}
+
+.mobile-menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  transition: height 0.5s ease-out, background 1s ease-out;
+  transition-delay: 0.2s;
+  z-index: 1000;
+  box-sizing: border-box;
+  display: none;
+}
+
+.mobile-menu-container.menu-opened {
+  height: 100%;
+  background-color: #000;
+  transition: height 0.3s ease-in, background 0.5s ease-in;
+  transition-delay: 0.25s;
+}
+
+.mobile-menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  background-color: #21367D;
+}
+
+.burger-container {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  transform: rotate(0deg);
+  transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  order: 2;
+}
+
+#burger {
+  width: 18px;
+  height: 8px;
+  position: relative;
+  display: block;
+}
+
+.bar {
+  width: 100%;
+  height: 1px;
+  display: block;
+  position: relative;
+  background: #FFF;
+  transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+}
+
+.topBar {
+  transform: translateY(0px) rotate(0deg);
+}
+
+.btmBar {
+  transform: translateY(6px) rotate(0deg);
+}
+
+.mobile-menu-container.menu-opened .burger-container {
+  transform: rotate(90deg);
+}
+
+.mobile-menu-container.menu-opened #burger .topBar {
+  transform: translateY(4px) rotate(45deg);
+  transition: all 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  transition-delay: 0.2s;
+}
+
+.mobile-menu-container.menu-opened #burger .btmBar {
+  transform: translateY(3px) rotate(-45deg);
+  transition: all 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  transition-delay: 0.2s;
+}
+
+ul.mobile-menu {
+  position: relative;
+  display: block;
+  padding: 0 48px;
+  margin-top: 20px;
+  list-style: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-out;
+}
+
+.mobile-menu-container.menu-opened ul.mobile-menu {
+  opacity: 1;
+  pointer-events: auto;
+  transition-delay: 0.3s;
+  overflow-y: auto;
+  height: calc(100% - 70px);
+}
+
+li.mobile-menu-item {
+  border-bottom: 1px solid #333;
+  margin-top: 5px;
+  transform: scale(1.15) translateY(-30px);
+  opacity: 0;
+  transition: transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99), opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+}
+
+li.mobile-menu-item:nth-child(1) {
+  transition-delay: 0.49s;
+}
+
+li.mobile-menu-item:nth-child(2) {
+  transition-delay: 0.42s;
+}
+
+li.mobile-menu-item:nth-child(3) {
+  transition-delay: 0.35s;
+}
+
+li.mobile-menu-item:nth-child(4) {
+  transition-delay: 0.28s;
+}
+
+.mobile-menu-container.menu-opened ul.mobile-menu li.mobile-menu-item {
+  transform: scale(1) translateY(0px);
+  opacity: 1;
+}
+
+.mobile-menu-container.menu-opened ul.mobile-menu li.mobile-menu-item:nth-child(1) {
+  transition-delay: 0.27s;
+}
+
+.mobile-menu-container.menu-opened ul.mobile-menu li.mobile-menu-item:nth-child(2) {
+  transition-delay: 0.34s;
+}
+
+.mobile-menu-container.menu-opened ul.mobile-menu li.mobile-menu-item:nth-child(3) {
+  transition-delay: 0.41s;
+}
+
+.mobile-menu-container.menu-opened ul.mobile-menu li.mobile-menu-item:nth-child(4) {
+  transition-delay: 0.48s;
+}
+
+li.mobile-menu-item a {
+  display: block;
+  position: relative;
+  color: #FFF;
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+  text-decoration: none;
+  font-size: 22px;
+  line-height: 2.35;
+  width: 100%;
+}
+
+.mobile-menu-header img {
+  height: 40px;
+  width: auto;
+  order: 1;
+}
+
+@media (max-width: 768px) {
+  .header.container {
+    display: none;
+  }
+  .mobile-menu-container {
+    display: block;
+  }
+}
+@media (min-width: 769px) {
+  .header.container {
+    display: flex !important;
+  }
+  .mobile-menu-container {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

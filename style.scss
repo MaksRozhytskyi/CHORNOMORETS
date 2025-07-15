@@ -150,6 +150,9 @@ body {
     margin-left: 20px;
     margin-top: 50px;
   }
+  @media (max-width: $breakpoint-md) {
+    margin-left: 20px;
+  }
 }
 
 .welcome-header {
@@ -164,6 +167,9 @@ body {
     font-size: 60px;
     line-height: 60px;
   }
+  @media (max-width: $breakpoint-md) {
+    margin-left: 20px;
+  }
 }
 
 .welcome-description {
@@ -177,6 +183,9 @@ body {
     margin-left: 20px;
     padding-right: 30px;
     font-size: 20px;
+  }
+  @media (max-width: $breakpoint-md) {
+    margin-left: 20px;
   }
 }
 
@@ -194,6 +203,9 @@ body {
   @media (max-width: $breakpoint-sm) {
     margin-left: 20px;
     margin-bottom: 50px;
+  }
+  @media (max-width: $breakpoint-md) {
+    margin-left: 20px;
   }
 }
 
@@ -215,6 +227,12 @@ body {
   padding-bottom: 94px;
   position: relative;
   @media (max-width: $breakpoint-sm) {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    padding: 0;
+  }
+  @media (max-width: $breakpoint-md) {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
@@ -248,6 +266,9 @@ body {
     height: 100%;
     background: #21367D;
     z-index: 0;
+    @media (max-width: $breakpoint-md){
+      display: none;
+    }
   }
 
   > * {
@@ -256,6 +277,13 @@ body {
   }
 
   @media (max-width: $breakpoint-sm) {
+    display: flex;
+    justify-content: center;
+    position: static;
+    align-items: center;
+    padding: 0;
+  }
+  @media (max-width: $breakpoint-md) {
     display: flex;
     justify-content: center;
     position: static;
@@ -293,6 +321,13 @@ body {
     display: flex;
     justify-content: center;
     padding: 0 20px 0 20px;
+  }
+  @media (max-width: $breakpoint-md) {
+    display: flex;
+    justify-content: center;
+    position: static;
+    align-items: center;
+    padding: 40px 0;
   }
 }
 
@@ -448,6 +483,9 @@ body {
     @media (max-width: $breakpoint-sm) {
       display: none;
     }
+    @media (max-width: $breakpoint-md) {
+      display: none;
+    }
   }
 
   @media (max-width: $breakpoint-sm) {
@@ -492,6 +530,10 @@ body {
     margin-left: 20px;
     margin-top: 30px;
   }
+  @media (max-width: $breakpoint-md) {
+    margin-left: 20px;
+    margin-top: 40px;
+  }
 }
 
 .about-the-club-header {
@@ -505,6 +547,9 @@ body {
   @media (max-width: $breakpoint-sm) {
     margin-left: 20px;
     font-size: 34px;
+  }
+  @media (max-width: $breakpoint-md) {
+    margin-left: 20px;
   }
 }
 
@@ -531,6 +576,9 @@ body {
   @media (max-width: $breakpoint-sm) {
     margin-left: 20px;
   }
+  @media (max-width: $breakpoint-md) {
+    margin-left: 20px;
+  }
 }
 
 .about-the-club-button {
@@ -542,6 +590,9 @@ body {
   text-decoration: none;
   background: #21367D;
   @media (max-width: $breakpoint-sm) {
+    margin-left: 20px;
+  }
+  @media (max-width: $breakpoint-md) {
     margin-left: 20px;
   }
 }
@@ -683,9 +734,10 @@ body {
   justify-content: center;
   align-items: center;
   @media (max-width: $breakpoint-sm) {
-    > *:not(:first-child) {
-      display: none;
-    }
+    flex-wrap: wrap;
+  }
+  @media (max-width: $breakpoint-md) {
+    flex-wrap: wrap;
   }
 }
 
@@ -726,7 +778,7 @@ body {
     display: flex;
     line-height: 50px;
   }
-  @media (max-width: $breakpoint-xs){
+  @media (max-width: $breakpoint-xs) {
     font-size: 42px;
   }
 }
@@ -759,13 +811,14 @@ body {
   gap: 30px;
   margin-bottom: 30px;
   @media (max-width: $breakpoint-sm) {
-    > *:not(:first-child) {
-      display: none;
-    }
+    flex-wrap: wrap;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
+  }
+  @media (max-width: $breakpoint-md) {
+    flex-wrap: wrap;
   }
 }
 
@@ -826,6 +879,9 @@ body {
     background: #E6E6E6FF;
     margin-bottom: 25px;
   }
+  @media (max-width: $breakpoint-md) {
+    background: #E6E6E6FF
+  }
 }
 
 .join-now-text-block {
@@ -844,6 +900,9 @@ body {
     margin-left: 20px;
     margin-top: 25px;
   }
+  @media (max-width: $breakpoint-md) {
+    margin-left: 20px;
+  }
 }
 
 .join-now-header {
@@ -855,6 +914,9 @@ body {
   color: #000000;
   margin-bottom: 20px;
   @media (max-width: $breakpoint-sm) {
+    margin-left: 20px;
+  }
+  @media (max-width: $breakpoint-md) {
     margin-left: 20px;
   }
 }
@@ -870,6 +932,9 @@ body {
     margin-left: 20px;
     line-height: 20px;
     margin-right: 20px;
+  }
+  @media (max-width: $breakpoint-md) {
+    margin-left: 20px;
   }
 }
 
@@ -887,6 +952,9 @@ body {
   @media (max-width: $breakpoint-sm) {
     margin-left: 20px;
     margin-bottom: 25px;
+  }
+  @media (max-width: $breakpoint-md) {
+    margin-left: 20px;
   }
 }
 
@@ -945,6 +1013,10 @@ body {
     margin-right: 20px;
     margin-left: 20px;
   }
+  @media (max-width: $breakpoint-md) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .photos {
@@ -996,6 +1068,9 @@ body {
       position: static;
       text-align: left;
     }
+    @media (max-width: $breakpoint-md) {
+      position: static;
+    }
   }
 }
 
@@ -1013,6 +1088,9 @@ body {
   display: inline-block;
   @media (max-width: $breakpoint-sm) {
     margin-top: 20px;
+  }
+  @media (max-width: $breakpoint-md) {
+    margin-top: 40px;
   }
 }
 
@@ -1046,6 +1124,11 @@ body {
   @media (max-width: $breakpoint-sm) {
     display: flex;
     flex-direction: column;
+  }
+  @media (max-width: $breakpoint-md) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -1098,6 +1181,11 @@ body {
     flex-direction: column;
     margin-bottom: 20px;
   }
+  @media (max-width: $breakpoint-md) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
 
   ul {
     list-style-type: none;
@@ -1117,6 +1205,12 @@ body {
     justify-content: center;
     align-items: center;
   }
+  @media (max-width: $breakpoint-md) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .footer-table {
@@ -1126,6 +1220,10 @@ body {
   border-left: 1px rgba(255, 255, 255, 0.5) solid;
   padding-left: 50px;
   @media (max-width: $breakpoint-sm) {
+    border: none;
+    padding: 0;
+  }
+  @media (max-width: $breakpoint-md) {
     border: none;
     padding: 0;
   }
@@ -1139,6 +1237,9 @@ body {
       gap: 10px;
       text-align: center;
     }
+    @media (max-width: $breakpoint-md) {
+      text-align: center;
+    }
 
     li a {
       text-decoration: none;
@@ -1148,6 +1249,10 @@ body {
       font-size: 16px;
       line-height: 100%;
       @media (max-width: $breakpoint-sm) {
+        text-align: center;
+        font-size: 24px;
+      }
+      @media (max-width: $breakpoint-md) {
         text-align: center;
         font-size: 24px;
       }
@@ -1165,6 +1270,10 @@ body {
     display: flex;
     flex-direction: column;
   }
+  @media (max-width: $breakpoint-md) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .footer-table-text {
@@ -1174,6 +1283,11 @@ body {
   line-height: 25px;
   color: #FFFFFF;
   @media (max-width: $breakpoint-sm) {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  @media (max-width: $breakpoint-md) {
     text-align: center;
     font-size: 28px;
     margin-bottom: 30px;

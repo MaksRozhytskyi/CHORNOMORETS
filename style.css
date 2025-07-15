@@ -47,6 +47,12 @@ body {
     margin-bottom: 60px;
   }
 }
+@media (max-width: 1024px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .header-navigation {
   display: flex;
@@ -124,6 +130,11 @@ body {
   font-size: 18px;
   color: #fff;
 }
+@media (max-width: 1024px) {
+  .input-search {
+    width: 150px;
+  }
+}
 
 .header-search {
   border-bottom: 1px #fff solid;
@@ -161,6 +172,11 @@ body {
     margin-left: 20px;
   }
 }
+@media (max-width: 1024px) {
+  .welcome-box {
+    margin-left: 20px;
+  }
+}
 
 .welcome-header {
   font-family: Changa, serif;
@@ -178,6 +194,11 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .welcome-header {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 1024px) {
   .welcome-header {
     margin-left: 20px;
   }
@@ -203,6 +224,11 @@ body {
     margin-left: 20px;
   }
 }
+@media (max-width: 1024px) {
+  .welcome-description {
+    margin-left: 20px;
+  }
+}
 
 .welcome-button {
   display: inline-block;
@@ -223,6 +249,11 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .welcome-button {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 1024px) {
   .welcome-button {
     margin-left: 20px;
   }
@@ -508,6 +539,11 @@ body {
 .about-the-club-text-block {
   margin-right: 70px;
 }
+@media (max-width: 1024px) {
+  .about-the-club-text-block {
+    margin: 20px;
+  }
+}
 
 .about-the-club {
   position: relative;
@@ -523,6 +559,11 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .about-the-club .container > img {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
   .about-the-club .container > img {
     display: none;
   }
@@ -550,6 +591,13 @@ body {
   padding-bottom: 93px;
   max-width: 1200px;
   margin: auto;
+}
+@media (max-width: 1024px) {
+  .about-the-club > .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .about-the-club-text {
@@ -802,6 +850,11 @@ body {
     flex-wrap: wrap;
   }
 }
+@media (max-width: 1024px) {
+  .carousel-block {
+    flex-wrap: wrap;
+  }
+}
 
 .owl-carousel {
   margin-bottom: 133px;
@@ -892,6 +945,12 @@ body {
     flex-wrap: wrap;
   }
 }
+@media (max-width: 1024px) {
+  .news-blocks-row {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
 
 .news-title {
   font-family: Changa, serif;
@@ -959,6 +1018,11 @@ body {
     background: #e6e6e6;
   }
 }
+@media (max-width: 1024px) {
+  .join-now {
+    background: #e6e6e6;
+  }
+}
 
 .join-now-text-block {
   font-family: Changa, serif;
@@ -984,6 +1048,11 @@ body {
     margin-left: 20px;
   }
 }
+@media (max-width: 1024px) {
+  .join-now-text-block {
+    margin-left: 20px;
+  }
+}
 
 .join-now-header {
   font-family: Changa, serif;
@@ -1000,6 +1069,11 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .join-now-header {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 1024px) {
   .join-now-header {
     margin-left: 20px;
   }
@@ -1025,6 +1099,11 @@ body {
     margin-left: 20px;
   }
 }
+@media (max-width: 1024px) {
+  .join-now-description {
+    margin-left: 20px;
+  }
+}
 
 .join-now-button {
   font-family: Changa, serif;
@@ -1045,6 +1124,11 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .join-now-button {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 1024px) {
   .join-now-button {
     margin-left: 20px;
   }
@@ -1109,6 +1193,12 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .photos-images {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 1024px) {
   .photos-images {
     display: flex;
     flex-direction: column;
@@ -1224,6 +1314,11 @@ body {
     text-align: left;
   }
 }
+@media (max-width: 1024px) {
+  .banner-info-description {
+    margin-bottom: 150px;
+  }
+}
 
 .cups-award-row {
   display: flex;
@@ -1240,6 +1335,15 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+@media (max-width: 1024px) {
+  .cups-award-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 30px;
+    gap: 0;
   }
 }
 
@@ -1307,6 +1411,13 @@ body {
     margin-bottom: 20px;
   }
 }
+@media (max-width: 1024px) {
+  .left-footer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+}
 .left-footer ul {
   list-style-type: none;
   display: flex;
@@ -1335,6 +1446,14 @@ body {
     align-items: center;
   }
 }
+@media (max-width: 1024px) {
+  .right-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 .footer-table {
   display: flex;
@@ -1350,6 +1469,12 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .footer-table {
+    border: none;
+    padding: 0;
+  }
+}
+@media (max-width: 1024px) {
   .footer-table {
     border: none;
     padding: 0;
@@ -1372,6 +1497,11 @@ body {
     text-align: center;
   }
 }
+@media (max-width: 1024px) {
+  .footer-table ul {
+    text-align: center;
+  }
+}
 .footer-table ul li a {
   text-decoration: none;
   color: white;
@@ -1387,6 +1517,12 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .footer-table ul li a {
+    text-align: center;
+    font-size: 24px;
+  }
+}
+@media (max-width: 1024px) {
   .footer-table ul li a {
     text-align: center;
     font-size: 24px;
@@ -1412,6 +1548,12 @@ body {
     flex-direction: column;
   }
 }
+@media (max-width: 1024px) {
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .footer-table-text {
   font-family: Changa, serif;
@@ -1428,6 +1570,13 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .footer-table-text {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 1024px) {
   .footer-table-text {
     text-align: center;
     font-size: 28px;

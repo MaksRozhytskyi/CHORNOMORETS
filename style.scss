@@ -50,6 +50,10 @@ body {
     justify-content: center;
     margin-bottom: 60px;
   }
+  @media (max-width: $breakpoint-xl) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .header-navigation {
@@ -122,6 +126,9 @@ body {
   font-weight: 500;
   font-size: 18px;
   color: #fff;
+  @media (max-width: $breakpoint-xl) {
+    width: 150px;
+  }
 }
 
 .header-search {
@@ -153,6 +160,9 @@ body {
   @media (max-width: $breakpoint-md) {
     margin-left: 20px;
   }
+  @media (max-width: $breakpoint-xl) {
+    margin-left: 20px;
+  }
 }
 
 .welcome-header {
@@ -170,6 +180,9 @@ body {
   @media (max-width: $breakpoint-md) {
     margin-left: 20px;
   }
+  @media (max-width: $breakpoint-xl) {
+    margin-left: 20px;
+  }
 }
 
 .welcome-description {
@@ -185,6 +198,9 @@ body {
     font-size: 20px;
   }
   @media (max-width: $breakpoint-md) {
+    margin-left: 20px;
+  }
+  @media (max-width: $breakpoint-xl) {
     margin-left: 20px;
   }
 }
@@ -205,6 +221,9 @@ body {
     margin-bottom: 50px;
   }
   @media (max-width: $breakpoint-md) {
+    margin-left: 20px;
+  }
+  @media (max-width: $breakpoint-xl) {
     margin-left: 20px;
   }
 }
@@ -266,7 +285,7 @@ body {
     height: 100%;
     background: #21367D;
     z-index: 0;
-    @media (max-width: $breakpoint-md){
+    @media (max-width: $breakpoint-md) {
       display: none;
     }
   }
@@ -469,6 +488,9 @@ body {
 
 .about-the-club-text-block {
   margin-right: 70px;
+  @media (max-width: $breakpoint-xl) {
+    margin: 20px;
+  }
 }
 
 .about-the-club {
@@ -479,11 +501,15 @@ body {
   margin-left: -50vw;
   margin-right: -50vw;
 
+
   .container > img {
     @media (max-width: $breakpoint-sm) {
       display: none;
     }
     @media (max-width: $breakpoint-md) {
+      display: none;
+    }
+    @media (max-width: $breakpoint-xl) {
       display: none;
     }
   }
@@ -511,6 +537,12 @@ body {
     padding-bottom: 93px;
     max-width: 1200px;
     margin: auto;
+
+    @media (max-width: $breakpoint-xl) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
   }
 }
 
@@ -739,6 +771,9 @@ body {
   @media (max-width: $breakpoint-md) {
     flex-wrap: wrap;
   }
+  @media (max-width: $breakpoint-xl) {
+    flex-wrap: wrap;
+  }
 }
 
 .owl-carousel {
@@ -820,6 +855,10 @@ body {
   @media (max-width: $breakpoint-md) {
     flex-wrap: wrap;
   }
+  @media (max-width: $breakpoint-xl) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 .news-title {
@@ -882,6 +921,9 @@ body {
   @media (max-width: $breakpoint-md) {
     background: #E6E6E6FF
   }
+  @media (max-width: $breakpoint-xl) {
+    background: #E6E6E6FF
+  }
 }
 
 .join-now-text-block {
@@ -903,6 +945,9 @@ body {
   @media (max-width: $breakpoint-md) {
     margin-left: 20px;
   }
+  @media (max-width: $breakpoint-xl) {
+    margin-left: 20px;
+  }
 }
 
 .join-now-header {
@@ -917,6 +962,9 @@ body {
     margin-left: 20px;
   }
   @media (max-width: $breakpoint-md) {
+    margin-left: 20px;
+  }
+  @media (max-width: $breakpoint-xl) {
     margin-left: 20px;
   }
 }
@@ -934,6 +982,9 @@ body {
     margin-right: 20px;
   }
   @media (max-width: $breakpoint-md) {
+    margin-left: 20px;
+  }
+  @media (max-width: $breakpoint-xl) {
     margin-left: 20px;
   }
 }
@@ -954,6 +1005,9 @@ body {
     margin-bottom: 25px;
   }
   @media (max-width: $breakpoint-md) {
+    margin-left: 20px;
+  }
+  @media (max-width: $breakpoint-xl) {
     margin-left: 20px;
   }
 }
@@ -1017,6 +1071,10 @@ body {
     display: flex;
     flex-direction: column;
   }
+  @media (max-width: $breakpoint-xl) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .photos {
@@ -1071,6 +1129,7 @@ body {
     @media (max-width: $breakpoint-md) {
       position: static;
     }
+
   }
 }
 
@@ -1116,6 +1175,9 @@ body {
   @media (max-width: $breakpoint-sm) {
     text-align: left;
   }
+  @media (max-width: $breakpoint-xl) {
+    margin-bottom: 150px;
+  }
 }
 
 .cups-award-row {
@@ -1129,6 +1191,13 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  @media (max-width: $breakpoint-xl) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 30px;
+    gap: 0;
   }
 }
 
@@ -1166,7 +1235,7 @@ body {
 
 .white-space {
   margin-bottom: 65px;
-  @media (max-width: $breakpoint-sm){
+  @media (max-width: $breakpoint-sm) {
     display: none;
   }
 }
@@ -1186,6 +1255,11 @@ body {
     margin-bottom: 20px;
   }
   @media (max-width: $breakpoint-md) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  @media (max-width: $breakpoint-xl) {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
@@ -1215,6 +1289,12 @@ body {
     justify-content: center;
     align-items: center;
   }
+  @media (max-width: $breakpoint-xl) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .footer-table {
@@ -1231,6 +1311,10 @@ body {
     border: none;
     padding: 0;
   }
+  @media (max-width: $breakpoint-xl) {
+    border: none;
+    padding: 0;
+  }
 
   ul {
     list-style-type: none;
@@ -1242,6 +1326,9 @@ body {
       text-align: center;
     }
     @media (max-width: $breakpoint-md) {
+      text-align: center;
+    }
+    @media (max-width: $breakpoint-xl) {
       text-align: center;
     }
 
@@ -1257,6 +1344,10 @@ body {
         font-size: 24px;
       }
       @media (max-width: $breakpoint-md) {
+        text-align: center;
+        font-size: 24px;
+      }
+      @media (max-width: $breakpoint-xl) {
         text-align: center;
         font-size: 24px;
       }
@@ -1278,6 +1369,10 @@ body {
     display: flex;
     flex-direction: column;
   }
+  @media (max-width: $breakpoint-xl) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .footer-table-text {
@@ -1292,6 +1387,11 @@ body {
     margin-bottom: 30px;
   }
   @media (max-width: $breakpoint-md) {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  @media (max-width: $breakpoint-xl) {
     text-align: center;
     font-size: 28px;
     margin-bottom: 30px;

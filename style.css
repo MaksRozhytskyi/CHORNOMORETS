@@ -332,6 +332,11 @@ body {
     margin-bottom: 50px;
   }
 }
+@media (max-width: 320px) {
+  .last-match-head-to-head {
+    gap: 20px;
+  }
+}
 
 .last-match-team {
   display: flex;
@@ -396,6 +401,11 @@ body {
 @media (max-width: 576px) {
   .next-match-championship {
     margin-top: 50px;
+  }
+}
+@media (max-width: 320px) {
+  .next-match-championship {
+    font-size: 20px;
   }
 }
 
@@ -615,6 +625,11 @@ body {
   color: #FFFFFF;
   margin-bottom: 60px;
 }
+@media (max-width: 320px) {
+  .schedule-header-text {
+    font-size: 36px;
+  }
+}
 
 .schedule-match-block {
   display: flex;
@@ -746,6 +761,11 @@ body {
   .news-header {
     display: flex;
     line-height: 50px;
+  }
+}
+@media (max-width: 320px) {
+  .news-header {
+    font-size: 42px;
   }
 }
 

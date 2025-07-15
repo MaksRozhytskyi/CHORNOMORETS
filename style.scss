@@ -1123,7 +1123,7 @@ body {
   gap: 50px;
   @media (max-width: $breakpoint-sm) {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
   }
   @media (max-width: $breakpoint-md) {
     display: flex;
@@ -1159,12 +1159,16 @@ body {
   @media (max-width: $breakpoint-sm) {
     display: flex;
     flex-direction: column;
+    gap: 30px;
   }
 }
 
 
 .white-space {
   margin-bottom: 65px;
+  @media (max-width: $breakpoint-sm){
+    display: none;
+  }
 }
 
 .footer {

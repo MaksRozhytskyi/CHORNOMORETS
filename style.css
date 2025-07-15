@@ -1232,7 +1232,7 @@ body {
 @media (max-width: 576px) {
   .cups-award-row {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 768px) {
@@ -1270,11 +1270,17 @@ body {
   .cup-award {
     display: flex;
     flex-direction: column;
+    gap: 30px;
   }
 }
 
 .white-space {
   margin-bottom: 65px;
+}
+@media (max-width: 576px) {
+  .white-space {
+    display: none;
+  }
 }
 
 .footer {

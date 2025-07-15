@@ -1,7 +1,7 @@
+$breakpoint-xs: 320px; // Телефоны
 $breakpoint-sm: 576px; // Телефоны
-$breakpoint-md: 768px; // Планшеты (портрет)
-$breakpoint-xl: 1200px; // Десктопы
-$breakpoint-xxl: 1400px; // Большие экраны
+$breakpoint-md: 768px; // Планшет
+$breakpoint-xl: 1024px; // Laptop
 
 body {
   overflow-x: hidden;
@@ -218,6 +218,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    padding: 0;
   }
 
   img {
@@ -686,6 +687,9 @@ body {
 .news-text {
   text-align: center;
   margin-top: 98px;
+  @media (max-width: $breakpoint-sm){
+    margin-top: 25px;
+  }
 }
 
 .news-text-block {
@@ -749,6 +753,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 10px;
   }
 }
 
@@ -797,6 +802,9 @@ body {
 
 .news {
   margin-bottom: 174px;
+  @media (max-width: $breakpoint-sm) {
+    margin-bottom: 25px;
+  }
 }
 
 .join-now {
@@ -804,6 +812,7 @@ body {
   margin-bottom: 108px;
   @media (max-width: $breakpoint-sm) {
     background: #E6E6E6FF;
+    margin-bottom: 25px;
   }
 }
 
@@ -821,6 +830,7 @@ body {
   margin-top: 69px;
   @media (max-width: $breakpoint-sm) {
     margin-left: 20px;
+    margin-top: 25px;
   }
 }
 
@@ -864,6 +874,7 @@ body {
   margin-bottom: 69px;
   @media (max-width: $breakpoint-sm) {
     margin-left: 20px;
+    margin-bottom: 25px;
   }
 }
 

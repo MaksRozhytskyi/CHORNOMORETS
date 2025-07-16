@@ -1,7 +1,7 @@
-$breakpoint-xs: 320px; // Телефоны
-$breakpoint-sm: 576px; // Телефоны
-$breakpoint-md: 768px; // Планшет
-$breakpoint-xl: 1024px; // Laptop
+$breakpoint-xs: 320px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-xl: 1024px;
 
 body {
   overflow-x: hidden;
@@ -497,6 +497,9 @@ body {
   align-items: center;
   @media (max-width: $breakpoint-sm) {
     margin-bottom: 50px;
+  }
+  @media (max-width: $breakpoint-xs) {
+    margin: 20px;
   }
 }
 

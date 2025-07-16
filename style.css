@@ -543,6 +543,11 @@ body {
     margin-bottom: 50px;
   }
 }
+@media (max-width: 320px) {
+  .next-match-timer {
+    margin: 20px;
+  }
+}
 
 .next-match-number {
   font-family: Changa, serif;

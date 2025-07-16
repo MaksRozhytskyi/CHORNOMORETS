@@ -85,6 +85,18 @@ body {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
+.header-navigation-link a:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #FFF;
+  transition: width 0.3s;
+}
+.header-navigation-link a:hover:after {
+  width: 100%;
+  transition: width 0.3s;
+}
 
 .left-header {
   display: flex;
@@ -129,6 +141,7 @@ body {
   font-weight: 500;
   font-size: 18px;
   color: #fff;
+  outline: none;
 }
 @media (max-width: 1024px) {
   .input-search {
@@ -241,6 +254,26 @@ body {
   background: rgb(33, 54, 125);
   text-decoration: none;
   padding: 13px 17px;
+  position: relative;
+  overflow: hidden;
+}
+.welcome-button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.25);
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 1;
+  pointer-events: none;
+}
+.welcome-button:hover:before {
+  opacity: 1;
 }
 @media (max-width: 576px) {
   .welcome-button {
@@ -689,6 +722,26 @@ body {
   padding: 3px 25px;
   text-decoration: none;
   background: #21367D;
+  position: relative;
+  overflow: hidden;
+}
+.about-the-club-button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 1;
+  pointer-events: none;
+}
+.about-the-club-button:hover:before {
+  opacity: 1;
 }
 @media (max-width: 576px) {
   .about-the-club-button {
@@ -961,6 +1014,8 @@ body {
   margin-left: 35px;
   margin-right: 60px;
   margin-bottom: 10px;
+  text-decoration: none;
+  color: black;
 }
 
 .news-title-selection {
@@ -1116,6 +1171,26 @@ body {
   padding: 10px 25px;
   text-decoration: none;
   margin-bottom: 69px;
+  position: relative;
+  overflow: hidden;
+}
+.join-now-button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 1;
+  pointer-events: none;
+}
+.join-now-button:hover:before {
+  opacity: 1;
 }
 @media (max-width: 576px) {
   .join-now-button {

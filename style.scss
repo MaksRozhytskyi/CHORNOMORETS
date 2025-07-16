@@ -83,7 +83,22 @@ body {
   a {
     text-decoration: none;
     color: rgba(255, 255, 255, 1);
+
+    &:after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #FFF;
+      transition: width .3s;
+    }
+
+    &:hover:after {
+      width: 100%;
+      transition: width .3s;
+    }
   }
+
 }
 
 .left-header {
@@ -126,6 +141,7 @@ body {
   font-weight: 500;
   font-size: 18px;
   color: #fff;
+  outline: none;
   @media (max-width: $breakpoint-xl) {
     width: 150px;
   }
@@ -216,6 +232,29 @@ body {
   background: rgba(33, 54, 125, 1);
   text-decoration: none;
   padding: 13px 17px;
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.25);
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  &:hover:before {
+    opacity: 1;
+  }
+
   @media (max-width: $breakpoint-sm) {
     margin-left: 20px;
     margin-bottom: 50px;
@@ -621,6 +660,29 @@ body {
   padding: 3px 25px;
   text-decoration: none;
   background: #21367D;
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.15);
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  &:hover:before {
+    opacity: 1;
+  }
+
   @media (max-width: $breakpoint-sm) {
     margin-left: 20px;
   }
@@ -870,6 +932,8 @@ body {
   margin-left: 35px;
   margin-right: 60px;
   margin-bottom: 10px;
+  text-decoration: none;
+  color: black;
 }
 
 
@@ -1000,6 +1064,29 @@ body {
   padding: 10px 25px;
   text-decoration: none;
   margin-bottom: 69px;
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.15);
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  &:hover:before {
+    opacity: 1;
+  }
+
   @media (max-width: $breakpoint-sm) {
     margin-left: 20px;
     margin-bottom: 25px;
